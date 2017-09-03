@@ -145,7 +145,7 @@ public class Task3Dbase {
                             resultSet.getInt("Score") + " ]"
             );
         }
-    } // Сделал доступ паблик методам для тестирования
+    } // Сделал доступ паблик, методам для тестирования
 
     public String changeScore(String lastName, int scoreOne) throws SQLException {
         pst = connection.prepareStatement("UPDATE students SET Score = ? WHERE LastName = ?;");
